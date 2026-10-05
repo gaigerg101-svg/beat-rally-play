@@ -1,0 +1,64 @@
+{
+ "tracks": [
+  {
+   "id": "pulse",
+   "title": "Pulse Garden",
+   "author": "Beat Rally (procedural)",
+   "license": "Original (procedural)",
+   "kind": "procedural",
+   "file": null,
+   "bpm": 104,
+   "firstBeatOffset": 0,
+   "key": "A",
+   "mode": "minor",
+   "loopStartBar": 8,
+   "loopEndBar": 88,
+   "energyFile": "music/pulse.energy.json"
+  },
+  {
+   "id": "drift",
+   "title": "Night Drift",
+   "author": "Beat Rally (procedural)",
+   "license": "Original (procedural)",
+   "kind": "procedural",
+   "file": null,
+   "bpm": 112,
+   "firstBeatOffset": 0,
+   "key": "D",
+   "mode": "minor",
+   "loopStartBar": 8,
+   "loopEndBar": 88,
+   "energyFile": "music/drift.energy.json"
+  },
+  {
+   "id": "sunny",
+   "title": "Sunny Rally",
+   "author": "Beat Rally (procedural)",
+   "license": "Original (procedural)",
+   "kind": "procedural",
+   "file": null,
+   "bpm": 120,
+   "firstBeatOffset": 0,
+   "key": "C",
+   "mode": "major",
+   "loopStartBar": 8,
+   "loopEndBar": 88,
+   "energyFile": "music/sunny.energy.json"
+  },
+  {
+   "id": "volt",
+   "title": "Volt Run",
+   "author": "Beat Rally (procedural)",
+   "license": "Original (procedural)",
+   "kind": "procedural",
+   "file": null,
+   "bpm": 126,
+   "firstBeatOffset": 0,
+   "key": "F",
+   "mode": "minor",
+   "loopStartBar": 8,
+   "loopEndBar": 96,
+   "energyFile": "music/volt.energy.json"
+  }
+ ]
+}
