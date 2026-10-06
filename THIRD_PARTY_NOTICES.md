@@ -98,6 +98,23 @@ Build-time tools (not shipped, run from `tools/.venv`): librosa (ISC) for beat m
 
 Researched and not shipped (wave 4): see `docs/wave-04/SONGS.md` (Skipped) and `tools/songs/songs.json` ("skipped"): each with its reason (share-alike or unclear licence, duplicate title, too short).
 
+## Music (wave 5)
+
+8 more bundled vocal songs in `public/music/` (same files and rules as waves 2 and 4), listed in `src/audio/songCatalog.ts`. All are U.S. sound recordings published before 1926 of songs published before 1931, marked public domain on their Wikimedia Commons file pages (Classics Protection and Access Act, 17 U.S.C. 1401). The licence was read on each file page on the date shown; the page text, the credit line and the edits are in `assets-src/licenses/<id>.txt`. No credit is required; the credit line is shown anyway. Their status may differ outside the United States. Lyric files, where present, come from public domain texts (Wikisource or the 1908 to 1925 sheet music on Commons); see `docs/wave-05/SONGS.md`.
+
+| Title | Artist | Source page | License | Credit line | Edits | Date checked |
+| --- | --- | --- | --- | --- | --- | --- |
+| Yes! We Have No Bananas | Frank Silver and Irving Cohn / Billy Jones | https://commons.wikimedia.org/wiki/File:Yes!_We_Have_No_Bananas,_Billy_Jones.flac | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "Yes! We Have No Bananas" by Frank Silver and Irving Cohn, performed by Billy Jones. Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | click removal (ffmpeg adeclick) and a 50 Hz high-pass on the raw 78 rpm transfer; loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+| Ain't We Got Fun | Richard A. Whiting, Raymond B. Egan and Gus Kahn / Billy Jones | https://commons.wikimedia.org/wiki/File:Ain't_we_got_fun_-_Billy_Jones.ogg | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "Ain't We Got Fun" by Richard A. Whiting, Raymond B. Egan and Gus Kahn, performed by Billy Jones. Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+| Yes Sir, That's My Baby | Walter Donaldson and Gus Kahn / Gene Austin and Billy "Uke" Carpenter | https://commons.wikimedia.org/wiki/File:Yes_sir,_that's_my_baby-Victor_19656-Gene_Austin_and_Billy_%22Uke%22_Carpenter.mp3 | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "Yes Sir, That's My Baby" by Walter Donaldson and Gus Kahn, performed by Gene Austin and Billy "Uke" Carpenter. Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+| It Had to Be You | Isham Jones and Gus Kahn / Marion Harris with Phil Ohman (piano) | https://commons.wikimedia.org/wiki/File:IT_HAD_TO_BE_YOU_-_MARION_HARRIS_-_Phil_Ohman.flac | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "It Had to Be You" by Isham Jones and Gus Kahn, performed by Marion Harris with Phil Ohman (piano). Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | click removal (ffmpeg adeclick) and a 50 Hz high-pass on the raw 78 rpm transfer; loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+| I'll See You in My Dreams | Isham Jones and Gus Kahn / Isham Jones and the Ray Miller Orchestra, vocal by Frank Bessinger | https://commons.wikimedia.org/wiki/File:I'll_See_You_In_My_Dreams_-_Isham_Jones_%26_Ray_Miller_Orch_(1924).ogg | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "I'll See You in My Dreams" by Isham Jones and Gus Kahn, performed by Isham Jones and the Ray Miller Orchestra, vocal by Frank Bessinger. Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+| Shine On, Harvest Moon | Jack Norworth and Nora Bayes / Ada Jones and Billy Murray | https://commons.wikimedia.org/wiki/File:Ada_Jones_and_Billy_Murray_-_Shine_On,_Harvest_Moon_(unrestored).ogg | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "Shine On, Harvest Moon" by Jack Norworth and Nora Bayes, performed by Ada Jones and Billy Murray. Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+| Some of These Days | Shelton Brooks / Sophie Tucker | https://commons.wikimedia.org/wiki/File:SOPHIE_TUCKER_-_Some_Of_These_Days_(1911).ogg | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "Some of These Days" by Shelton Brooks, performed by Sophie Tucker. Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+| Daisy Bell | Harry Dacre / Edward M. Favor | https://commons.wikimedia.org/wiki/File:Daisy_Bell_sung_by_Edward_M._Favor.ogg | Public domain (U.S. sound recording published before 1926; may differ outside the U.S.) | "Daisy Bell" by Harry Dacre, performed by Edward M. Favor. Public domain recording (published before 1926), via Wikimedia Commons. Edited for Beat Rally. | loudness normalized to -16 LUFS; encoded to Opus and AAC | 2026-10-05 |
+
+Researched and not shipped (wave 5): see `docs/wave-05/SONGS.md` (Skipped).
+
 ## Sound effects
 
 No sample files ship. Every sound effect and note instrument is synthesized at startup (`src/audio/synth.ts`, `src/audio/synthVoices.ts`). The michorvath ping pong hit and the Kenney packs were not used.
@@ -119,6 +136,19 @@ Bundled in `public/fonts/` as woff2 with their licence files beside them. Both f
 | Archivo-Variable.woff2 | Archivo (wdth 62 to 125, wght 100 to 900), Copyright 2020 The Archivo Project Authors | github.com/google/fonts ofl/archivo/Archivo[wdth,wght].ttf (9710da1e), upstream github.com/Omnibus-Type/Archivo | SIL OFL 1.1, `public/fonts/Archivo-OFL.txt` | Subset to Latin, Latin Extended and punctuation, converted to woff2 with fontTools |
 | Archivo-Italic-Variable.woff2 | Archivo Italic (same axes and authors) | github.com/google/fonts ofl/archivo/Archivo-Italic[wdth,wght].ttf (9710da1e) | SIL OFL 1.1, `public/fonts/Archivo-OFL.txt` | Subset and converted as above |
 | JetBrainsMono-Variable.woff2 | JetBrains Mono (wght 100 to 800), Copyright 2020 The JetBrains Mono Project Authors | github.com/JetBrains/JetBrainsMono fonts/webfonts/JetBrainsMono[wght].woff2 (19371302) | SIL OFL 1.1, `public/fonts/JetBrainsMono-OFL.txt` | None (official woff2, renamed) |
+
+## Fonts (wave 5)
+
+Bundled in `public/fonts/` as woff2, one file per script (the page loads a file only when it shows that script), with
+the licence files beside them. Taken unchanged from the Fontsource npm packages, which repackage the Google Fonts
+builds (source github.com/google/fonts). Neither font declares a Reserved Font Name. Bungee sets titles, headers and
+big numbers; Rubik sets the UI text and lyric lines in Latin, Cyrillic, Hebrew and Arabic. No italic faces are loaded
+(the UI sets `font-synthesis: none`), so the Archivo italic file above is no longer used by the UI.
+
+| File | Font | Source | License | Change |
+| --- | --- | --- | --- | --- |
+| Bungee-Latin.woff2, Bungee-LatinExt.woff2 | Bungee Regular, Copyright 2023 The Bungee Project Authors (github.com/djrrb/Bungee) | npm @fontsource/bungee 5.3.0 (Google Fonts v17), files bungee-latin-400-normal.woff2 and bungee-latin-ext-400-normal.woff2 | SIL OFL 1.1, `public/fonts/Bungee-OFL.txt` | None (renamed) |
+| Rubik-Latin, -LatinExt, -Cyrillic, -CyrillicExt, -Hebrew, -Arabic.woff2 | Rubik (wght 300 to 900), Copyright 2015 The Rubik Project Authors (github.com/googlefonts/rubik) | npm @fontsource-variable/rubik 5.3.0 (Google Fonts v31), files rubik-<script>-wght-normal.woff2 | SIL OFL 1.1, `public/fonts/Rubik-OFL.txt` | None (renamed) |
 
 ## Libraries (npm, exact versions in package.json)
 
