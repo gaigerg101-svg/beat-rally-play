@@ -115,6 +115,8 @@ Researched and not shipped (wave 4): see `docs/wave-04/SONGS.md` (Skipped) and `
 
 Researched and not shipped (wave 5): see `docs/wave-05/SONGS.md` (Skipped).
 
+Build-time lyric tools (wave 6, not shipped, run from `tools/.venv`; the models are downloaded at build time into the git-ignored `assets-src/audio/work/models/` by `tools/lyrics/fetch_models.py`, which checks each licence on the Hugging Face API first): jonatasgrosman/wav2vec2-large-xlsr-53-italian (Apache-2.0, revision dab04a3e00d8326052f3fb22a6ff276b822f6131), jonatasgrosman/wav2vec2-large-xlsr-53-french (Apache-2.0, revision 7c79e105a6525d38e1e69f640b974b4a679723cc) and jonatasgrosman/wav2vec2-large-xlsr-53-english (Apache-2.0, revision 569a6236e92bd5f7652a0420bfe9bb94c5664080) as CTC aligners, loaded with Hugging Face transformers (Apache-2.0). The CTC Viterbi pass in `tools/lyrics/align_ctc.py` is our own code. Not used (CC BY-NC 4.0): WhisperX's default Italian and French aligners (VOXPOPULI_ASR_BASE_10K_IT and _FR) and ctc-forced-aligner's default MMS-300m model. Lyric texts from Wikisource score transcriptions (Some of These Days, Daisy Bell) are public domain (fetched by script; not yet aligned or baked, see `docs/wave-06/B2.md`).
+
 ## Sound effects
 
 No sample files ship. Every sound effect and note instrument is synthesized at startup (`src/audio/synth.ts`, `src/audio/synthVoices.ts`). The michorvath ping pong hit and the Kenney packs were not used.
