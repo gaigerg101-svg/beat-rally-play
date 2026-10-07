@@ -1,0 +1,32 @@
+beat_this_small0.onnx
+
+Model: Beat This! small0 checkpoint (beat and downbeat tracker), CPJKU, Institute of Computational
+Perception, JKU Linz. Code and published weights: MIT licence (text below).
+Source: https://github.com/CPJKU/beat_this (package beat_this 1.1.0, checkpoint "small0" from the
+official CPJKU checkpoint store, beat_this-small0.ckpt, sha256 6074be2c4d490c5f6101fcc374a1ec72ae93456e23bb6019783b849f5dc7d47b).
+Converted to ONNX (opset 17, input "spect" float32 [1, T, 128], outputs "beat" and "downbeat" logits
+[1, T]) with tools/reader/export_onnx.py (torch.onnx.export). ONNX sha256 08fd2652f393b04fec055ec390b0e3f97bf9ce48392d424438a42c8ebdf301dd.
+The upstream README notes that some training files are copyrighted or under limited Creative Commons
+licences and that users should judge whether this matters for their use. The weights themselves are MIT.
+
+MIT License
+
+Copyright (c) 2024 Institute of Computational Perception, JKU Linz, Austria
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
